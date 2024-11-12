@@ -19,7 +19,8 @@ const App = () => {
       <Route path="/books/:bookId" element={<SingleBook />} />
       <Route path="/register" element={<SignUp />} />
       <Route path="/login" element={<Login setToken={setToken}/>} />
-      <Route path="/account" element={<AccountDetails />} />
+      <Route path="/account" element={<AccountDetails token={token}/>} />
+      <Route path="/user/rentals" />
     </Routes>
     </>
   )
