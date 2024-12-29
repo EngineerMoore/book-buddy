@@ -8,7 +8,7 @@ const SignUp = () => {
   const [ passwordInput, setPasswordInput ] = useState("");
 
   const submitSignUp = async (e) => {
-    e.preventDefault;
+    e.preventDefault();
     try {
       const response = await fetch(`https://fsa-book-buddy-b6e748d1380d.herokuapp.com/api/users/register`,
         {
